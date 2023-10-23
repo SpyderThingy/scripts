@@ -1,10 +1,11 @@
 var startScript
+//this next line asks what program should be run
 startScript = window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made or the weekly pay calculator? Answer with 1, 2, 3, 4 and 5 respectively.")
 if (startScript == 1) {
     var number1
-    number1 = window.prompt("What number do you wish to multiply?")
+    number1 = window.prompt("What number do you wish to multiply?") // he multiplies
     var number2
-    number2 = window.prompt("What are you multiplying it by?")
+    number2 = window.prompt("What are you multiplying it by?") // he goin ham
     alert("The answer is " + number1 * number2 + ".")
 } else if (startScript == 2) {
     var colour
