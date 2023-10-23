@@ -1,1 +1,3 @@
-document.write("0" + "<br>" + "2" + "<br>" + "4" + "<br>" + "6" + "<br>" + "8" + "<br>")
+for (let number = 0; number<=8; number+=2) {
+    document.write("number" + "</br>");
+}
