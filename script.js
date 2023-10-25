@@ -32,5 +32,5 @@ if (prompts.toLowerCase == "yes") {
     hourlyRate = window.prompt("Input your hourly rate.")
     var hoursWorked
     hoursWorked = window.prompt("Input how long you work.")
-    alert("Your weekly pay is " + "£" + hourlyRate * hoursWorked + " per week.") //the multiplier reworded       
+    alert("Your weekly pay is " + "£" + hourlyRate * hoursWorked + " per week.") //the multiplier reworded    
 }

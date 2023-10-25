@@ -1,3 +1,3 @@
-for (let x=0; x<=20;x+=2) {
-    document.write("Hi" + "<br>");
+for (let number = 0; number<=10; number+=2) {
+    document.write(number + "</br>");
 }
