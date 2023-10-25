@@ -1,1 +1,8 @@
-var startScript,number1,number2,colour,firstName,lastName,prompts,hourlyRate,hoursWorked;1==(startScript=window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made or the weekly pay calculator? Answer with 1, 2, 3, 4 and 5 respectively."))?(number1=window.prompt("What number do you wish to multiply?"),number2=window.prompt("What are you multiplying it by?"),aler("The answer is "+number1*number2+".")):2==startScript?(colour=window.prompt("What's your favourite colour?"),document.write("Your favourite colour is "+colour+".")):3==startScript?(firstName=window.prompt("What's your first name?"),lastName=window.prompt("What's your last name?"),document.write(lastName+" "+firstName)):4==startScript?(alert("Hello! This is a text box. I think it's kinda neat."),"yes"==(prompts=window.prompt("is this cool?")).toLowerCase?alert("Thank you!"):(window.prompt("How could this be improved?"),alert("I will take note of that."))):5==startScript&&(hourlyRate=window.prompt("Input your hourly rate."),hoursWorked=window.prompt("Input how long you work."),alert("Your weekly pay is £"+hourlyRate*hoursWorked+" per week."));
+var x = Math.floor(Math.random()*10)
+console.log("Shh! The number is " + x + ". Don't tell anyone!")
+var y = 0
+var times = 0
+while (y!=x) {
+    y = window.prompt("Guess my lucky number!")
+    times++
+} alert("The amount of tries needed for this to succeed were: " + times)
