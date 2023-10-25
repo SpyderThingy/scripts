@@ -1,6 +1,9 @@
-var x = 0
+var x = Math.floor(Math.random()*10)
+console.log(x)
 var y = 0
-while (x!=10) {
-    x = window.prompt("Enter a number equal to 10.")
-    y++
-} alert("The amount of tries needed for this to succeed were: " + y)
+var times = 0
+while (y!=x) {
+    document.write(x)
+    y = window.prompt("Enter a number equal to 10.")
+    times++
+} alert("The amount of tries needed for this to succeed were: " + times)
