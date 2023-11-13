@@ -1,6 +1,6 @@
 var startScript
 //this next line asks what program should be run
-startScript = window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made or the weekly pay calculator? Answer with 1, 2, 3, 4 and 5 respectively.")
+startScript = window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made, the weekly pay calculator or the address formatter? Answer with 1 to 6 respectively.")
 if (startScript == 1) {
     var number1
     number1 = window.prompt("What number do you wish to multiply?") // he multiplies
@@ -33,4 +33,11 @@ if (prompts.toLowerCase == "yes") {
     var hoursWorked
     hoursWorked = window.prompt("Input how long you work.")
     alert("Your weekly pay is " + "£" + hourlyRate * hoursWorked + " per week.") //the multiplier reworded    
+} else if (startScript = 6) {
+    var housenumber = window.prompt("Enter your house number.") 
+    var street = window.prompt("Enter your street.") 
+    var town = window.prompt("Enter your town.") 
+    town = town.charAt(0).toUpperCase + town.slice(1) //capitalises first letter
+    var house = housenumber + ", " + street + ", " + town 
+    alert("You live at " + house + ".") 
 }
