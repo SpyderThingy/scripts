@@ -10,7 +10,7 @@ if (startScript == 1) {
 } else if (startScript == 2) {
     var colour
     colour = window.prompt("What's your favourite colour?")
-    document.write("Your favourite colour is " + colour + ".") //literally obvious
+    document.write("Your favourite colour is " + colour + ".") //literally obvious IT STATES A VARIABLE LOL
 } else if (startScript == 3) {
     var firstName
     firstName = window.prompt("What's your first name?")
