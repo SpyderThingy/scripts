@@ -1,21 +1,14 @@
-var startScript
-//this next line asks what program should be run
-startScript = window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made, the weekly pay calculator or the address formatter? Answer with 1 to 6 respectively.")
+var startScript = window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made, the weekly pay calculator or the address formatter? Answer with 1 to 6 respectively.")
 if (startScript == 1) {
-    var number1
-    number1 = window.prompt("What number do you wish to multiply?") // he multiplies
-    var number2
-    number2 = window.prompt("What are you multiplying it by?") // he goin ham
+    var number1 = window.prompt("What number do you wish to multiply?") // he multiplies
+    var number2 = window.prompt("What are you multiplying it by?") // he goin ham
     alert("The answer is " + number1 * number2 + ".") //answer :woohoo:
 } else if (startScript == 2) {
-    var colour
-    colour = window.prompt("What's your favourite colour?")
+    var colour = window.prompt("What's your favourite colour?")
     document.write("Your favourite colour is " + colour + ".") //literally obvious IT STATES A VARIABLE LOL
 } else if (startScript == 3) {
-    var firstName
-    firstName = window.prompt("What's your first name?")
-    var lastName
-    lastName = window.prompt("What's your last name?")
+    var firstName = window.prompt("What's your first name?")
+    var lastName = window.prompt("What's your last name?")
     document.write(lastName + " " + firstName) //also obvious
 } else if (startScript == 4) {
     var prompts //this is a test. i used it as my first time with if/else statements after 4-5 years
@@ -28,12 +21,10 @@ if (prompts.toLowerCase == "yes") {
         alert("I will take note of that. (in other words it isn't stored anywhere :3)")
     }
 } else if (startScript == 5) {
-    var hourlyRate
-    hourlyRate = window.prompt("Input your hourly rate.")
-    var hoursWorked
-    hoursWorked = window.prompt("Input how long you work.")
+    var hourlyRate = window.prompt("Input your hourly rate.")
+    var hoursWorked = window.prompt("Input how long you work.")
     alert("Your weekly pay is " + "£" + hourlyRate * hoursWorked + " per week.") //the multiplier reworded    
-} else if (startScript = 6) {
+} else if (startScript == 6) {
     var housenumber = window.prompt("Enter your house number.") 
     var street = window.prompt("Enter your street.") 
     var town = window.prompt("Enter your town.") 
