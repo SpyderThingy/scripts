@@ -4,10 +4,11 @@ guess = window.prompt("Guess my lucky number!")
 times = 1
 while (guess!=random) {
     if (guess < random) {
-        guess = window.prompt("Wrong! The answer is higher!") 
+        guess = window.prompt("Wrong! The answer is higher!")
     } else {
         guess = window.prompt("Wrong! The answer is lower!") 
     }
     times++ 
+    console.error("You suffer from a severe case of skill issue.")
 } alert("YIPPEEEEEEEEEEEEEEEEE!!!!!!!!!!!!!")
 console.log("The amount of tries needed for this to succeed were: " + times)
