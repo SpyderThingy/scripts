@@ -1,4 +1,4 @@
-var randon = Math.floor(Math.random()*10) 
+var random = Math.floor(Math.random()*10) 
 console.log("Shh! The number is " + random + ". Don't tell anyone!") 
 guess = 0 
 times = 0 
