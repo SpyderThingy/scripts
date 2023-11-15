@@ -1,13 +1,8 @@
-random = Math.floor(Math.random()*10)
-guess = window.prompt("Enter your guess to this lucky number!")
-times = 1
-console.log(random)
-while (guess > random) {
-    guess = window.prompt("Wrong! The answer is lower.")
-    times = times++
-}
-while (guess < random) {
-    guess = window.prompt("Wrong! The answer is higher.")
-    times = times++
-}
-alert("Nice! that took you " + times + " tries.")
+var randon = Math.floor(Math.random()*10) 
+console.log("Shh! The number is " + random + ". Don't tell anyone!") 
+guess = 0 
+times = 0 
+while (guess!=random) { 
+    guess = window.prompt("Guess my lucky number!") 
+    times++ 
+} alert("The amount of tries needed for this to succeed were: " + times) 
