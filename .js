@@ -1,8 +1,12 @@
-var x = Math.floor(Math.random()*10)
-console.log("Shh! The number is " + x + ". Don't tell anyone!")
-var y = 0
-var times = 0
-while (y!=x) {
-    y = window.prompt("Guess my lucky number!")
-    times++
-} alert("The amount of tries needed for this to succeed were: " + times)
+const randomQuestion = ["What is 8*3?", "What is 4*12?", "What is 3*12?", "What is 7*8?"]
+random = Math.floor(Math.random()*randomQuestion)-1
+guess = window.prompt(randomQuestion[random])
+if (randomQuestion[random] == 0) {
+    answer = 24
+} else if (condition) {
+    
+} else if (condition) {
+    
+} else {
+    
+}
