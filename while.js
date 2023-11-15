@@ -9,4 +9,5 @@ while (guess!=random) {
         guess = window.prompt("Wrong! The answer is lower!") 
     }
     times++ 
-} alert("YIPPEEEEEEEEEEEEEEEEE!!!!!!!!!!!!!") && console.log("The amount of tries needed for this to succeed were: " + times)
+} alert("YIPPEEEEEEEEEEEEEEEEE!!!!!!!!!!!!!")
+console.log("The amount of tries needed for this to succeed were: " + times)
