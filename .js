@@ -1,4 +1,4 @@
-console.warn("WARNING: This might break sooooo idk :3")
+console.warn("WARNING: This might break sooooo idk :3")//well it IS broken, only on vscode for some god forsaken reason
 random1 = Math.floor(Math.random()*12)+1
 random2 = Math.floor(Math.random()*12)+1
 answer = random1 * random2
