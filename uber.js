@@ -1,5 +1,7 @@
-fare = 1.10 * parseInt(window.prompt("Approximately how long is your journey in miles?"))
-fare = fare * window.prompt("How long will your journey take?")/10
+const base = 1.10
+distance = parseFloat(window.prompt("How far is your journey?"))
+time = parseFloat(window.prompt("How long will it take?")*0.1)
+fare = time+distance+base
 if (fare < 2.5) {
     alert("Your fare is £2.50")
 } else {
