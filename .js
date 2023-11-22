@@ -1,17 +1,15 @@
-const randomQuestion = ["What is 8*3?", "What is 4*12?", "What is 3*12?", "What is 7*8?"]
-random = Math.floor(Math.random()*randomQuestion)-1
-guess = window.prompt(randomQuestion[random])
-if (randomQuestion[random] == 0) {
-    answer = 24
-} else if (randomQuestion[random] == 1) {
-    answer = 48
-} else if (randomQuestion[random] == 2) {
-    answer = 36
-} else {
-    answer = 56
+console.warn("WARNING: This might break sooooo idk :3")
+random1 = Math.floor(Math.random()*12)+1
+random2 = Math.floor(Math.random()*12)+1
+answer = random1 * random2
+tries = 1
+guess = window.prompt("What is " + random1 + " * " + random2 +"?")
+while (guess!=answer) {
+    alert("Wrong!")
+    tries++
+    random1 = Math.floor(Math.random()*12)+1
+    random2 = Math.floor(Math.random()*12)+1
+    answer = random1 * random2
+    guess = window.prompt("What is " + random1 + " * " + random2 +"?")
 }
-if (guess != answer) {
-    guess = window.prompt(randomQuestion[random])
-} else {
-    alert("GG!")
-}
+console.log("Took: "  + tries + " attempts")
