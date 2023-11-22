@@ -3,10 +3,15 @@ random = Math.floor(Math.random()*randomQuestion)-1
 guess = window.prompt(randomQuestion[random])
 if (randomQuestion[random] == 0) {
     answer = 24
-} else if (condition) {
-    
-} else if (condition) {
-    
+} else if (randomQuestion[random] == 1) {
+    answer = 48
+} else if (randomQuestion[random] == 2) {
+    answer = 36
 } else {
-    
+    answer = 56
+}
+if (guess != answer) {
+    guess = window.prompt(randomQuestion[random])
+} else {
+    alert("GG!")
 }
