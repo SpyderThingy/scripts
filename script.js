@@ -1,4 +1,4 @@
-startScript = window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made, the weekly pay calculator or the address formatter? Answer with 1 to 6 respectively.")
+startScript = window.prompt("Which script should be started? The multiplier, the one that states your favourite colour, the name swapper, the little test I made, the weekly pay calculator, the address formatter or the Uber® fare calculator? Answer with 1 to 7 respectively.")
 if (startScript == 1) {
     number1 = window.prompt("What number do you wish to multiply?") // he multiplies
     number2 = window.prompt("What are you multiplying it by?") // he goin ham
@@ -30,4 +30,15 @@ if (startScript == 1) {
     town = town.charAt(0).toUpperCase + town.slice(1) //capitalises first letter
     house = housenumber + ", " + street + ", " + town 
     alert("You live at " + house + ".") 
+} else if (startScript == 7) {
+    const base = 1.10
+    distance = parseFloat(window.prompt("How far is your journey?"))
+    time = parseFloat(window.prompt("How long will it take?")*0.1)
+    fare = time+distance+base
+    if (fare < 2.5) {
+        console.error("PRICE TOO LOW; SWITCHING TO MINIMUM FARE, £2.50")
+        alert("Your fare is £2.50")
+    } else {
+        alert("Your fare is £" + fare + "0.")
+    }
 }
