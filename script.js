@@ -79,6 +79,6 @@ switch (startScript) {
         }
         break
     default:
-        startScript = window.prompt("Write something please.")
+        location.reload()
 }
 // jamie for the love of god learn js
